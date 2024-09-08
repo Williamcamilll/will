@@ -1,0 +1,153 @@
+/* Importando Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Estilos Gerais */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #121212; /* Fundo escuro neutro */
+    color: #e0e0e0; /* Texto em cinza claro */
+}
+
+header {
+    background: #003366; /* Azul Escuro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #1c1c1c; /* Escuro para o menu */
+    padding: 10px 0;
+}
+
+nav a {
+    color: #e0e0e0; /* Texto claro */
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff4b5c; /* Vermelho suave */
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.section {
+    background: #1e1e1e; /* Escuro para seções */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transform: perspective(1000px) rotateX(0) rotateY(0); /* Efeito 3D */
+    transition: transform 0.3s, background 0.3s;
+}
+
+.section:hover {
+    transform: perspective(1000px) rotateX(0) rotateY(10deg); /* Efeito 3D ao passar o mouse */
+    background: #2c2c2c; /* Escurece um pouco ao passar o mouse */
+}
+
+h2 {
+    color: #ff4b5c; /* Vermelho suave */
+    border-bottom: 2px solid #e0e0e0; /* Linha clara embaixo dos títulos */
+    padding-bottom: 10px;
+}
+
+.education-item, .experience-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #333; /* Escuro para itens */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-card {
+    background: #003366; /* Azul Escuro */
+    color: #e0e0e0; /* Texto claro */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transform: perspective(1000px) rotateX(0) rotateY(0); /* Efeito 3D */
+    transition: transform 0.3s;
+    flex: 1 1 150px;
+    text-align: center;
+}
+
+.skill-card:hover {
+    transform: perspective(1000px) rotateX(0) rotateY(10deg); /* Efeito 3D ao passar o mouse */
+}
+
+.contact-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 10px;
+}
+
+.contact-list a {
+    color: #ff4b5c; /* Vermelho suave */
+    text-decoration: none;
+}
+
+.contact-list a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #003366; /* Azul Escuro */
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff4b5c; /* Vermelho suave */
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    font-size: 20px;
+    transition: background 0.3s;
+}
+
+.back-to-top:hover {
+    background: #cc0000; /* Vermelho escuro */
+}
